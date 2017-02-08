@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Predestination</title>
+    <link href="css/style.css" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -21,7 +22,7 @@
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
             <div class="nav-wrapper blue-grey darken-4">
                 <a href="#!" class="brand-logo center">Logo</a>
-                <ul class="left hide-on-med-and-down">
+                <ul class="left hide-on-med-and-down table-of-contents">
                     <li><a href="#section 1">Section 1</a></li>
                     <li><a href="#section 2">Section 2</a></li>
                     <li><a href="#section 3">Section 3</a></li>
@@ -36,43 +37,49 @@
         <li><a href="#section 2" class="white-text">Section 2</a></li>
         <li><a href="#section 3" class="white-text">Section 3</a></li>
     </ul>
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/predestination-banner (1).jpg"></div>
-    </div>
-    <div class="section blue-grey darken-3 white-text" id="section 1">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p>Parallax is an effect where the background content or image in this
-                case, is moved at a different speed than the foreground content while scrolling.</p>
+    <div class="row">
+        <div class="parallax-container">
+            <div class="parallax"><img src="/images/predestination-banner (1).jpg"></div>
+        </div>
+        <div class="section blue-grey darken-3 white-text scrollspy" id="section 1">
+            <div class="row container">
+                <h2 class="header">Parallax</h2>
+                <p>Parallax is an effect where the background content or image in this
+                    case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="/images/4671.jpg"></div>
+        </div>
+        <div class="section blue-grey darken-3 white-text scrollspy" id="section 2">
+            <div class="row container">
+                <h2 class="header">Parallax</h2>
+                <p>Parallax is an effect where the background content or image in this
+                    case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="/images/Predestination-banner3.jpg"></div>
+        </div>
+        <div class="section blue-grey darken-3 white-text scrollspy" id="section 3">
+            <div class="row container">
+                <h2 class="header">Parallax</h2>
+                <p>Parallax is an effect where the background content or image in this
+                    case, is moved at a different speed than the foreground content while scrolling.</p>
+            </div>
+        </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="/images/predestination-banner.jpg"></div>
         </div>
     </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/4671.jpg"></div>
-    </div>
-    <div class="section blue-grey darken-3 white-text" id="section 2">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p>Parallax is an effect where the background content or image in this
-                case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/Predestination-banner3.jpg"></div>
-    </div>
-    <div class="section blue-grey darken-3 white-text" id="section 3">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p>Parallax is an effect where the background content or image in this
-                case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/predestination-banner.jpg"></div>
-    </div>
+    <!--<div id="navbar" class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+            <li><a href="#section 1" class="white-text">Section 1</a></li>
+            <li><a href="#section 2" class="white-text">Section 2</a></li>
+            <li><a href="#section 3" class="white-text">Section 3</a></li>
+        </ul>
+    </div>-->
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.parallax').parallax();
-        });
         $('.button-collapse').sideNav({
                 menuWidth: 300, // Default is 300
                 edge: 'left', // Choose the horizontal origin
@@ -80,6 +87,12 @@
                 draggable: true // Choose whether you can drag to open on touch screens
             }
         );
+        $(document).ready(function(){
+            $('.parallax').parallax();
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 300
+            });
+        });
     </script>
 </main>
 <footer class="page-footer blue-grey darken-4">
