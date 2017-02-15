@@ -9,3 +9,9 @@
     top: -64px;
     visibility: hidden;
 }
+#review {
+    border: 0px;
+}
+#review div{
+    border: 0px;
+}
